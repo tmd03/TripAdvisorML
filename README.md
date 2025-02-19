@@ -2,7 +2,7 @@
 ML project in Zerobase
 
 ## Abstract 
------
+
 ## Setup
 To run the experiment, install the required packages.
 
@@ -10,7 +10,7 @@ Python==3.12.3
 ```bash
 pip install -r requirements.txt
 ```
------
+
 ## Data preperation
 ### 1) Augmentation
 Use the `Augmentation` folder inside `Dataset Building` to augment data using the provided pre-augmentation dataset and related scripts. The final dataset is created by merging manually collected and augmented data.
@@ -52,7 +52,7 @@ Dataset_Building/kor_split_letters.ipynb
 ```
 > Splits collected Korean words into consonants and vowels for the Korean Consonant & Vowel Combination task.
 
------
+
 ## Run
 The constructed dataset is stored in the `Dataset` folder. Use this dataset along with the models in the `Task` folder to evaluate LLMs' word restoration capabilities.
 📌 **GPT o3-mini** is only used for error case analysis in this study.
@@ -67,7 +67,7 @@ Task/claude_batch.ipynb
 Task/gpto3mini.ipynb
 ```
 
------
+
 ## Evaluation Preprocessing
 Before evaluating LLM responses, preprocessing is performed using the scripts in the `Preprocessing` folder.
 
@@ -81,7 +81,7 @@ Preprocessing/abbreviation_preprocessing.ipynb
 ```
 > For English and Korean abbreviation tasks, LLMs generate five responses. This script selects the most similar response to the ground truth for evaluation.
 
------
+
 ## Evaluation
 Assess the performance of different models and analyze the results.
 
